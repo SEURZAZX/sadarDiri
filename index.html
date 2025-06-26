@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Compass: Panduan Diri Terbaikmu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background-gradient"></div>
+    <div class="container">
+      <header class="main-header">
+        <h1 class="site-title">Inner Compass</h1>
+        <div class="user-display hidden" id="userDisplay">
+          Selamat Datang,
+          <span id="currentUsername" class="highlight-text"></span>!
+        </div>
+        <nav class="main-nav hidden" id="mainNav">
+          <button class="nav-button active" data-section="mental-test">
+            Tes Mental
+          </button>
+          <button class="nav-button" data-section="insecure-guide">
+            Atasi Insecure
+          </button>
+          <button class="nav-button" data-section="confidence-boost">
+            Percaya Diri
+          </button>
+        </nav>
+      </header>
+
+      <main class="content-wrapper">
+        <section id="loginSection" class="section-card">
+          <h2 class="card-title">Mulai Petualanganmu</h2>
+          <p class="card-description">
+            Masukkan namamu untuk mengungkap potensi diri.
+          </p>
+          <div class="input-group">
+            <label for="usernameInput">Namamu:</label>
+            <input
+              type="text"
+              id="usernameInput"
+              placeholder="Contoh: Sang Juara"
+              autocomplete="name"
+            />
+          </div>
+          <button id="startButton" class="action-button">
+            Mulai Sekarang!
+          </button>
+        </section>
+
+        <section id="mental-test" class="section-card hidden">
+          <h2 class="card-title">Tes Kondisi Mental</h2>
+          <div class="conversation-area" id="mentalTestConversation"></div>
+          <div class="test-options hidden" id="mentalTestOptions"></div>
+          <button
+            class="action-button next-button hidden"
+            id="mentalTestNextButton"
+          >
+            Lanjut
+          </button>
+          <button class="action-button test-start-button" id="startMentalTest">
+            Mulai Tes Mental
+          </button>
+          <p class="test-result hidden" id="mentalTestResult"></p>
+          <button
+            class="action-button test-reset-button hidden"
+            id="resetMentalTest"
+          >
+            Ulang Tes
+          </button>
+        </section>
+
+        <section id="insecure-guide" class="section-card hidden">
+          <h2 class="card-title">Mengatasi Insecure</h2>
+          <div class="conversation-area" id="insecureGuideConversation"></div>
+          <button
+            class="action-button next-button hidden"
+            id="insecureGuideNextButton"
+          >
+            Lanjut
+          </button>
+          <button
+            class="action-button guide-start-button"
+            id="startInsecureGuide"
+          >
+            Mulai Panduan
+          </button>
+        </section>
+
+        <section id="confidence-boost" class="section-card hidden">
+          <h2 class="card-title">Membangun Kepercayaan Diri</h2>
+          <div class="conversation-area" id="confidenceBoostConversation"></div>
+          <button
+            class="action-button next-button hidden"
+            id="confidenceBoostNextButton"
+          >
+            Lanjut
+          </button>
+          <button
+            class="action-button guide-start-button"
+            id="startConfidenceBoost"
+          >
+            Mulai Panduan
+          </button>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <p>&copy; 2025 Inner Compass - Syahril Amri. Semua Hak Dilindungi.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
